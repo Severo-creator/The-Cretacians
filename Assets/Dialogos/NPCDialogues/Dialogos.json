@@ -1,0 +1,22 @@
+{
+  "dialogues": [
+    {
+      "ordem": 1,
+      "cena": 1,
+      "characterName": "Alice",
+      "dialogueText": "Olá! Como você está?"
+    },
+    {
+      "ordem": 2,
+      "cena": 1,
+      "characterName": "Bob",
+      "dialogueText": "Estou bem, obrigado por perguntar!"
+    },
+    {
+      "ordem": 3,
+      "cena": 1,
+      "characterName": "Alice",
+      "dialogueText": "Vamos explorar juntos esta aventura!"
+    }
+  ]
+}
