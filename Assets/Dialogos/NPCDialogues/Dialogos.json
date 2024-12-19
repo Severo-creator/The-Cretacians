@@ -1,22 +1,134 @@
 {
   "dialogues": [
     {
-      "ordem": 1,
-      "cena": 1,
-      "characterName": "Alice",
-      "dialogueText": "Olá! Como você está?"
+      "id": 1,
+      "cenaID": 1,
+      "proximaCenaID": 1,
+      "proximoDialogoID": 2,
+      "characterName": "",
+      "dialogueText": "...",
+      "possuiResposta": false,
+      "opcoes": [
+        {
+          "resposta": "Comprar itens",
+          "proximoDialogoID": 2,
+          "proximaCenaID": 1
+        },
+        {
+          "resposta": "Conversar",
+          "proximoDialogoID": 3,
+          "proximaCenaID": 1
+        },
+        {
+          "resposta": "Sair",
+          "proximoDialogoID": 1,
+          "proximaCenaID": 1
+        }
+      ]
     },
     {
-      "ordem": 2,
-      "cena": 1,
-      "characterName": "Bob",
-      "dialogueText": "Estou bem, obrigado por perguntar!"
+      "id": 2,
+      "cenaID": 1,
+      "proximaCenaID": 1,
+      "proximoDialogoID": 3,
+      "characterName": "",
+      "dialogueText": "Tudo parece calmo aqui...",
+      "possuiResposta": false,
+      "opcoes": [
+        {
+          "resposta": "Comprar itens",
+          "proximoDialogoID": 2,
+          "proximaCenaID": 1
+        },
+        {
+          "resposta": "Conversar",
+          "proximoDialogoID": 3,
+          "proximaCenaID": 1
+        },
+        {
+          "resposta": "Sair",
+          "proximoDialogoID": 1,
+          "proximaCenaID": 1
+        }
+      ]
     },
     {
-      "ordem": 3,
-      "cena": 1,
-      "characterName": "Alice",
-      "dialogueText": "Vamos explorar juntos esta aventura!"
+      "id": 3,
+      "cenaID": 1,
+      "proximaCenaID": 2,
+      "proximoDialogoID": 1,
+      "characterName": "",
+      "dialogueText": "Que som é esse?",
+      "possuiResposta": false,
+      "opcoes": [
+        {
+          "resposta": "Comprar itens",
+          "proximoDialogoID": 2,
+          "proximaCenaID": 1
+        },
+        {
+          "resposta": "Conversar",
+          "proximoDialogoID": 3,
+          "proximaCenaID": 1
+        },
+        {
+          "resposta": "Sair",
+          "proximoDialogoID": 1,
+          "proximaCenaID": 1
+        }
+      ]
+    },
+    {
+      "id": 1,
+      "cenaID": 2,
+      "proximaCenaID": 2,
+      "proximoDialogoID": 2,
+      "characterName": "????",
+      "dialogueText": "*Passos pesados*",
+      "possuiResposta": false,
+      "opcoes": [
+        {
+          "resposta": "Comprar itens",
+          "proximoDialogoID": 2,
+          "proximaCenaID": 1
+        },
+        {
+          "resposta": "Conversar",
+          "proximoDialogoID": 3,
+          "proximaCenaID": 1
+        },
+        {
+          "resposta": "Sair",
+          "proximoDialogoID": 1,
+          "proximaCenaID": 1
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "cenaID": 2,
+      "proximaCenaID": 2,
+      "proximoDialogoID": 1,
+      "characterName": "Rex",
+      "dialogueText": "OlÁ!! bom dia.",
+      "possuiResposta": true,
+      "opcoes": [
+        {
+          "resposta": "Ok...",
+          "proximoDialogoID": 1,
+          "proximaCenaID": 1
+        },
+        {
+          "resposta": "MEU DEUS, QUE COISA FOFA",
+          "proximoDialogoID": 1,
+          "proximaCenaID": 1
+        },
+        {
+          "resposta": "UM DINOSSAURO! ALGUEM ME AJUDE! SOCORRO",
+          "proximoDialogoID": 1,
+          "proximaCenaID": 1
+        }
+      ]
     }
   ]
 }

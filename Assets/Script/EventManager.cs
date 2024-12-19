@@ -9,6 +9,8 @@ public class EventManager : MonoBehaviour
 
     [SerializeField] private int cenaAtual = 1;
 
+    [SerializeField] private int ordem = 1;
+
     [SerializeField] private List<PlayEvent> Events = new List<PlayEvent>();
 
 
@@ -26,26 +28,35 @@ public class EventManager : MonoBehaviour
         }
         //List<PlayEvents>
         Events[cenaAtual - 1].PlayingEvent(); 
+        Events[cenaAtual - 1].SetOrdemIdAtual(ordem);
     }
 
     // Update is called once per frame
     void Update()
     {
         if(!Events[cenaAtual - 1].IsPlayingEvent()){
-            cenaAtual = Events[cenaAtual - 1].NextCene();
 
-            Events[cenaAtual].PlayingEvent();
+            Debug.Log("0MG");
+
+            ordem = Events[cenaAtual - 1].proximaoOrdem;
+            cenaAtual = Events[cenaAtual - 1].proximaCena;
+
+            Events[cenaAtual - 1].PlayingEvent();
+            Events[cenaAtual - 1].SetOrdemIdAtual(ordem);
         } 
 
-        if(NextButton()){
-            
-        }
 
         Events[cenaAtual - 1].ChangeText();
     }
 
-    public bool NextButton(){
-        return false;
+    public void NextButton(){
+        Events[cenaAtual - 1].NextOrder();
     }
+
+    public void ResponderButton(int resp){
+        Events[cenaAtual - 1].SelecionarResposta(resp);
+    }
+
+    
     
 }
